@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header>
+      <p class="eyebrow">GIT PRACTICE PROJECT</p>
+      <h1>My Tasks</h1>
+      <p class="subtitle">A tiny task manager to practice frontend and Git.</p>
+    </header>
+    <form id="task-form">
+      <input id="task-input" type="text" placeholder="Add a new task..." aria-label="New task" maxlength="100" required />
+      <button type="submit">Add</button>
+    </form>
+    <div class="summary"><span id="count">0 completed</span><button id="clear-completed" type="button">Clear completed</button></div>
+    <ul id="task-list" aria-label="Tasks"></ul>
+    <p id="empty-state" class="empty">No tasks yet. Add your first task!</p>
+  </main>
+</body>
+</html>
